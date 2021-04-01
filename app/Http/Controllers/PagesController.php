@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function home(Example $example)
+    public function home()
     {
-        dd($example);
+        return view::make('welcome');
     }
     //
 }

@@ -6,14 +6,31 @@ namespace App;
 
 class Example
 {
-    protected $collaborator;
+    protected $apikey;
 
-    protected $foo;
+    /**
+     * Example constructor.
+     */
 
-    public function __construct(Collaborator $collaborator, $foo)
+    public function __construct($apikey)
     {
-        $this->collaborator = $collaborator;
-        $this->foo = $foo;
+        $this->apikey = $apikey;
+
+    }
+
+//    protected $collaborator;
+//
+//    protected $foo;
+//
+//    public function __construct(Collaborator $collaborator, $foo)
+//    {
+//        $this->collaborator = $collaborator;
+//        $this->foo = $foo;
+//    }
+
+    public function handle()
+    {
+        die('it works');
     }
 
 }
