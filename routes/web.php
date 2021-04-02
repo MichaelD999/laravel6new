@@ -12,19 +12,24 @@
 */
 
 
-app()->bind('App\Example', function () {
-    $collaborator = new \App\Collaborator();
-    $foo = 'foobar';
 
-    return new \App\Example($collaborator, $foo);
-});
+Route::get('/contact', 'ContactController@show');
 
+Route::post('/contact', 'ContactController@store');
 
-Route::get('/', 'PagesController@home');
-
-//Route::get('/', function () {
-//    return view('welcome');
+//app()->bind('App\Example', function () {
+//    $collaborator = new \App\Collaborator();
+//    $foo = 'foobar';
+//
+//    return new \App\Example($collaborator, $foo);
 //});
+//
+//
+//Route::get('/', 'PagesController@home');
+
+Route::get('/', function () {
+    return view('welcome');
+});
 
 //Route::get('/', function () {
 //   $container = new \App\Container();
