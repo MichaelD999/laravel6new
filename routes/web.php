@@ -10,12 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/', 'welcome');
+
+Route::get('payments/create', 'PaymentsController@create')->middleware('auth');
+Route::post('payments', 'PaymentsController@create')->middleware('auth');
+
+Auth::routes();
 
 
-
-Route::get('/contact', 'ContactController@show');
-
-Route::post('/contact', 'ContactController@store');
+//Route::get('/contact', 'ContactController@show');
+//
+//Route::post('/contact', 'ContactController@store');
 
 //app()->bind('App\Example', function () {
 //    $collaborator = new \App\Collaborator();
@@ -27,9 +32,9 @@ Route::post('/contact', 'ContactController@store');
 //
 //Route::get('/', 'PagesController@home');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 //Route::get('/', function () {
 //   $container = new \App\Container();
