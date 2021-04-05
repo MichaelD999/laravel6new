@@ -13,7 +13,8 @@
 Route::view('/', 'welcome');
 
 Route::get('payments/create', 'PaymentsController@create')->middleware('auth');
-Route::post('payments', 'PaymentsController@create')->middleware('auth');
+Route::post('payments', 'PaymentsController@store')->middleware('auth');
+Route::get('notifications', 'UserNotificationController@show')->middleware('auth');
 
 Auth::routes();
 
