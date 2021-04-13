@@ -19,6 +19,8 @@ Route::get('notifications', 'UserNotificationController@show')->middleware('auth
 Route::get('conversations', 'ConversationsController@index');
 Route::get('conversations/{conversation}', 'ConversationsController@show');
 
+Route::post('best-replies/{reply}', 'ConversationBestReplyController@store');
+
 Auth::routes();
 
 

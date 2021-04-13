@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Conversation;
 use Illuminate\Http\Request;
 
 class ConversationsController extends Controller

@@ -20,8 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56953e4a-da11-4ade-ad93-483a90b8f07e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/conversations/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Conversation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Reply.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/conversations/replies.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/conversations/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ConversationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ConversationsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/conversations/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/conversations/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +176,10 @@
       <workItem from="1617475873207" duration="494000" />
       <workItem from="1617575212678" duration="3010000" />
       <workItem from="1617604891989" duration="14980000" />
-      <workItem from="1617694868702" duration="7819000" />
+      <workItem from="1617694868702" duration="27080000" />
+      <workItem from="1617958197873" duration="6136000" />
+      <workItem from="1618182843770" duration="56000" />
+      <workItem from="1618218209423" duration="4842000" />
     </task>
     <servers />
   </component>
@@ -188,23 +199,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1134" y="295" key="NewPhpClassDialog" timestamp="1617696926608">
-      <screen x="0" y="23" width="1920" height="994" />
+    <state x="1277" y="336" key="NewPhpClassDialog" timestamp="1617885725781">
+      <screen x="0" y="23" width="1920" height="995" />
     </state>
     <state x="756" y="224" key="NewPhpClassDialog/0.23.1280.735@0.23.1280.735" timestamp="1617262548667" />
     <state x="1134" y="295" key="NewPhpClassDialog/0.23.1920.994@0.23.1920.994" timestamp="1617696926608" />
-    <state x="1277" y="336" key="NewPhpClassDialog/0.23.1920.995@0.23.1920.995" timestamp="1617185969844" />
+    <state x="1277" y="336" key="NewPhpClassDialog/0.23.1920.995@0.23.1920.995" timestamp="1617885725781" />
+    <state x="1134" y="296" key="NewPhpClassDialog/0.23.1920.996@0.23.1920.996" timestamp="1617874458326" />
     <state x="1019" y="418" width="598" height="490" key="find.popup" timestamp="1617620363265">
       <screen x="0" y="23" width="1920" height="994" />
     </state>
     <state x="1019" y="418" width="598" height="490" key="find.popup/0.23.1920.994@0.23.1920.994" timestamp="1617620363265" />
     <state x="1019" y="418" width="598" height="490" key="find.popup/0.23.1920.995@0.23.1920.995" timestamp="1617130511027" />
-    <state x="397" y="260" width="670" height="500" key="search.everywhere.popup" timestamp="1617665640886">
-      <screen x="0" y="23" width="1280" height="735" />
+    <state x="596" y="344" width="1005" height="678" key="search.everywhere.popup" timestamp="1617969794894">
+      <screen x="0" y="23" width="1920" height="996" />
     </state>
     <state x="397" y="259" width="670" height="498" key="search.everywhere.popup/0.23.1280.734@0.23.1280.734" timestamp="1617232495502" />
     <state x="397" y="260" width="670" height="500" key="search.everywhere.popup/0.23.1280.735@0.23.1280.735" timestamp="1617665640886" />
     <state x="596" y="343" width="1005" height="675" key="search.everywhere.popup/0.23.1920.994@0.23.1920.994" timestamp="1617622581718" />
+    <state x="596" y="344" width="1005" height="677" key="search.everywhere.popup/0.23.1920.995@0.23.1920.995" timestamp="1617907716348" />
+    <state x="596" y="344" width="1005" height="678" key="search.everywhere.popup/0.23.1920.996@0.23.1920.996" timestamp="1617969794894" />
     <state x="595" y="344" width="670" height="676" key="search.everywhere.popup/0.23.1920.997@0.23.1920.997" timestamp="1617097754198" />
   </component>
 </project>
